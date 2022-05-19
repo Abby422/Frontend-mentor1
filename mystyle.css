@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Rubik;
+    font-weight: 300, 400, 500;
+}
+body{
+    background-color: hsl(226, 43%, 10%); 
+    color: white;
+}
+.container{
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    margin: 20px;
+    /*border: 1px solid greenyellow;*/
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4,200px);
+    grid-template-rows: repeat(2,200px);
+    grid-template-areas: "one two three four"
+    "one five six seven"
+    
+}
+.test1{
+    grid-area: one;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 20px;
+}
+.profile{
+    background-color: hsl(246, 80%, 60%);
+    height: 290px;
+    padding: 30px;
+    border-bottom: 1px solid hsl(246, 80%, 60%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+#report{
+    font-size: 0.8rem;
+    color: hsl(236, 100%, 87%);
+}
+.name{
+    font-size: 1.953rem;
+    font-weight: 300;
+}
+.profile-image{
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 360px;
+}
+
+.when{
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+button{
+    color: hsl(235, 45%, 61%);
+    width: fit-content;
+    background-color: hsl(235, 46%, 20%);
+    border: 0;
+    font-size: 15px;
+}
+button:active{
+    color: white;
+}
+button:
+.when button:hover{
+    color: white;
+    cursor: pointer;
+}
+.when button:active{
+    color: white;
+}
+/*.when>a{
+    text-decoration: none;
+    color: hsl(235, 45%, 61%);
+    
+}
+.when>:active{
+    color: white;
+}
+.when>a:hover{
+    color: white;
+}*/
+.test2{
+    grid-area: two;
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 20px; 
+}
+.test2>span{
+    float: right;
+    height: 40px;
+    z-index: -1;
+}
+.test2 > img{
+    float: right;
+    z-index: -1;
+    height: 30px;
+}
+.card-title{
+    border-radius: 15px;
+    width: 200px;
+    height: 160px;
+    /*border: 1px solid teal;*/
+    text-align: justify;
+    background-color: hsl(235, 46%, 20%);
+    position: relative;
+    margin-top: 40px;
+    padding: 20px 20px 0px 0px;
+    padding-left: 15px;
+}
+.card-title:hover{
+    background-color: hsl(246, 80%, 60%);
+    cursor: pointer;
+}
+.card-title img{
+    cursor: pointer;
+}
+.card-title p{
+    font-size: 18px;
+    float: left;
+}
+.time h3{
+    font-size: 2.441rem;
+    font-weight: 200;
+}
+.time p{
+    color: hsl(236, 100%, 87%);
+    font-size: 10px;
+}
+.test3{
+    grid-area: three;
+    background-color: hsl(195, 74%, 62%);
+    border-radius: 20px;
+    
+}
+.test3 >span{
+    float: right;
+    height: 40px;
+    z-index: -1;
+}
+.test3 > img{
+    float: right;
+    z-index: -1;
+    height: 30px;
+}
+.test4{
+    grid-area: four;
+    background-color: hsl(348, 100%, 68%);
+    border-radius: 20px;
+}
+.test4 >span{
+    float: right;
+    height: 40px;
+    z-index: -1;
+}
+.test4 > img{
+    float: right;
+    z-index: -1;
+    height: 30px;
+}
+.test5{
+    grid-area: five;
+    background-color: hsl(145, 58%, 55%);
+    border-radius: 20px;
+}
+.test5 >span{
+    float: right;
+    height: 40px;
+    z-index: -1;
+}
+.test5 > img{
+    float: right;
+    z-index: -1;
+    height: 30px;
+}
+.test6{
+    grid-area: six;
+    background-color: hsl(264, 64%, 52%);
+    border-radius: 20px;
+
+}
+.test6 > span{
+    float: right;
+    height: 40px;
+    z-index: -1;
+}
+.test6 > img{
+    float: right;
+    z-index: -1;
+    height: 30px;
+}
+.test7{
+    grid-area: seven;
+    background-color: hsl(43, 84%, 65%);
+    border-radius: 20px;
+
+}
+.test7 >span{
+    float: right;
+    height: 40px;
+    z-index: -1;
+}
+.test7 > img{
+    float: right;
+    z-index: -1;
+    height: 30px;
+}
+@media screen and (max-width: 769px) {
+    .content{
+        margin: 20px;
+        /*border: 1px solid greenyellow;*/
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .profile{
+        background-color: hsl(246, 80%, 60%);
+        height: fit-content;
+        width: 100%;
+        padding: 30px;
+        border-bottom: 1px solid hsl(246, 80%, 60%);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .paragraph{
+        margin-left: 50px;
+    }
+    .when{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .card-title{
+        border-radius: 15px;
+        width: 100%;
+        height: 80%;
+        text-align: justify;
+        background-color: hsl(235, 46%, 20%);
+        margin-top: 40px;
+        padding: 20px 20px 0px 0px;
+        padding-left: 15px;
+    }
+}

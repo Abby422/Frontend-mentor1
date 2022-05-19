@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="content">
+            <div class="test1">
+                <div class="profile">
+                    <div><img src="/images/image-jeremy.png" alt="profile-photo" class="profile-image"><br><br></div>
+                    <div class="paragraph"><p id="report">Report for</p>
+                    <p class="name">Jeremy</p>
+                    <p class="name">Robson</p></div>
+                </div>
+                <div class="when">
+                    <button onclick="displayDaily()">Daily</button><br>
+                    <button onclick="displayWeekly() ">Weekly</button><br>
+                    <button onclick="displayMonthly() ">Monthly</button>
+                    <!--<a href="#" onclick="displayDaily()">Daily</a><br>
+                    <a href="#">Weekly</a><br>
+                    <a href="#">Monthly</a>-->
+                </div>
+            </div>
+            <div class="test2">
+                <span><img src="/images/icon-work.svg" alt="" ></span>
+                <div class="card-title">
+                    <p>Work</p>
+                    <span style="float: right;" ><img src="/images/icon-ellipsis.svg" alt="icon-ellipsis" ></span>
+                    <div class="time">
+                        <br><br><br>
+                        <h3 id="time1" >32hrs</h3>
+                        <p id="day1">Last week - 36hrs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="test3">
+                <span><img src="/images/icon-play.svg" alt="" ></span>
+                <div class="card-title">
+                    <p>Play</p>
+                    <span style="float: right;"><img src="/images/icon-ellipsis.svg" alt="icon-ellipsis" ></span>
+                    <div class="time">
+                        <br><br><br>
+                        <h3 id="time2" >10hrs</h3>
+                        <p id="day2" >Last week - 8hrs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="test4">
+                <span><img src="/images/icon-study.svg" alt="" ></span>
+                <div class="card-title">
+                    <p>Study</p>
+                    <span style="float: right;" ><img src="/images/icon-ellipsis.svg" alt="icon-ellipsis" ></span>
+                    <div class="time">
+                        <br><br><br>
+                        <h3 id="time3">4hrs</h3>
+                        <p id="day3">Last week - 7hrs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="test5">
+                <span><img src="/images/icon-exercise.svg" alt="" ></span>
+                <div class="card-title">
+                    <p>Exercise</p>
+                    <span style="float: right;" ><img src="/images/icon-ellipsis.svg" alt="icon-ellipsis" ></span>
+                    <div class="time">
+                        <br><br><br>
+                        <h3 id="time4">4hrs</h3>
+                    <p id="day4">Last week - 5hrs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="test6">
+                <span><svg width="75" height="100" xmlns="http://www.w3.org/2000/svg"><g fill="#5A1CBB" fill-rule="nonzero"><path d="M45.834 46.627c4.78 4.78 13.1 5.754 19.257-.403 5.2-5.199 5.198-13.657 0-18.855L47.151 9.428C42.335 4.614 34.02 3.7 27.892 9.83c-4.701 4.7-5.151 12.066-1.352 17.277l-6.265 6.265c-1.339 1.339-.317 3.644 1.585 3.533l13.474-.777 10.499 10.499Zm11.404-11.483a2.567 2.567 0 1 1-3.629 3.631 2.567 2.567 0 0 1 3.63-3.631ZM35.745 20.909a2.567 2.567 0 1 1 3.63-3.629 2.567 2.567 0 0 1-3.63 3.63Zm12.562 5.303a2.567 2.567 0 1 1-3.63 3.63 2.567 2.567 0 0 1 3.63-3.63ZM55.16 63.698 37.219 45.756c-5.198-5.197-13.658-5.197-18.857.001-6.072 6.073-5.26 14.4-.402 19.258l10.499 10.5-.777 13.473c-.11 1.886 2.186 2.931 3.533 1.584l6.265-6.265c5.212 3.8 12.577 3.349 17.277-1.352 6.06-6.059 5.274-14.386.403-19.257ZM25.813 57.24a2.567 2.567 0 1 1 3.63-3.631 2.567 2.567 0 0 1-3.63 3.63Zm8.932 8.931a2.567 2.567 0 1 1 3.63-3.629 2.567 2.567 0 0 1-3.63 3.63Zm8.932 8.933a2.567 2.567 0 1 1 3.63-3.631 2.567 2.567 0 0 1-3.63 3.63Z"/></g></svg></span>
+                <div class="card-title">
+                    <p>Social</p>
+                    <span style="float: right;" ><img src="/images/icon-ellipsis.svg" alt="icon-ellipsis" ></span>
+                 <div class="time">
+                     <br><br><br>
+                    <h3 id="time5">5hrs</h3>
+                    <p id="day5">Last week - 10hrs</p>
+                 </div>
+                </div>
+            </div>
+            <div class="test7">
+                <span><img src="/images/icon-self-care.svg" alt="" ></span>
+                <div class="card-title">
+                    <p>Self Care</p>
+                    <span style="float: right;" ><img src="/images/icon-ellipsis.svg" alt="icon-ellipsis" ></span>
+                <div class="time">
+                    <br><br><br>
+                    <h3 id="time6">2hrs</h3>
+                    <p id="day6">Last week - 2hrs</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function displayDaily(){
+           document.getElementById("time1").innerHTML = "5hrs"
+           document.getElementById("time2").innerHTML = "1hr"
+           document.getElementById("time3").innerHTML = "0hrs"
+           document.getElementById("time4").innerHTML = "1hr"
+           document.getElementById("time5").innerHTML = "1hr"
+           document.getElementById("time6").innerHTML = "0hrs"
+           document.getElementById("day1").innerHTML = "Yesterday - 7hrs"
+           document.getElementById("day2").innerHTML = "Yesterday - 2hrs"
+           document.getElementById("day3").innerHTML = "Yesterday - 1hr"
+           document.getElementById("day4").innerHTML = "Yesterday - 1hr"
+           document.getElementById("day5").innerHTML = "Yesterday - 3hrs"
+           document.getElementById("day6").innerHTML = "Yesterday - 1hr"
+
+
+        }
+        function displayWeekly(){
+           document.getElementById("time1").innerHTML = "32hrs"
+           document.getElementById("time2").innerHTML = "10hrs"
+           document.getElementById("time3").innerHTML = "4hrs"
+           document.getElementById("time4").innerHTML = "4hrs"
+           document.getElementById("time5").innerHTML = "5hrs"
+           document.getElementById("time6").innerHTML = "2hrs"
+           document.getElementById("day1").innerHTML = "Last Week - 36hrs"
+           document.getElementById("day2").innerHTML = "Last Week - 8hrs"
+           document.getElementById("day3").innerHTML = "Last Week - 7hrs"
+           document.getElementById("day4").innerHTML = "Last Week - 5hrs"
+           document.getElementById("day5").innerHTML = "Last Week - 10hrs"
+           document.getElementById("day6").innerHTML = "Last Week - 2hrs"
+        }
+        function displayMonthly(){
+            document.getElementById("time1").innerHTML = "103hrs"
+            document.getElementById("time2").innerHTML = "23hrs"
+            document.getElementById("time3").innerHTML = "13hrs"
+            document.getElementById("time4").innerHTML = "11hrs"
+            document.getElementById("time5").innerHTML = "21hrs"
+            document.getElementById("time6").innerHTML = "7hrs"
+            document.getElementById("day1").innerHTML = "Last Month - 128hrs"
+            document.getElementById("day2").innerHTML = "Last Month - 29hrs"
+            document.getElementById("day3").innerHTML = "Last Month - 19hrs"
+            document.getElementById("day4").innerHTML = "Last Month - 18hrs"
+            document.getElementById("day5").innerHTML = "Last Month - 23hrs"
+            document.getElementById("day6").innerHTML = "Last Month - 11hrs"
+        }
+    </script>
+</body>
+</html>
